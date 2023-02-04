@@ -119,6 +119,7 @@ jobs:
         sed -i '/CONFIG_FIRMWARE_INCLUDE_KUMASOCKS/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_IPT2SOCKS/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_MICROSOCKS/d' .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_HTOP/d' .config
         #校园网相关开始
         sed -i '/CONFIG_FIRMWARE_INCLUDE_MENTOHUST/d' .config #删除配置项MENTOHUST
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT/d' .config #删除配置项SCUTCLIENT
@@ -134,6 +135,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_SERVER=n" >> .config #SOFTETHERVPN
         echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CLIENT=n" >> .config #SOFTETHERVPN
         echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CMD=n" >> .config #SOFTETHERVPN
+        echo "CONFIG_FIRMWARE_INCLUDE_HTOP=n" >> .config
         #科学相关
         echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> .config #SS plus+
         echo "CONFIG_FIRMWARE_INCLUDE_V2RAY=n" >> .config #集成v2ray执行文件（3.8M左右)
